@@ -1,0 +1,480 @@
+:root {
+    --teal: #007d7b;
+    --fonts: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: var(--fonts);
+    line-height: 1.5;
+}
+
+html{
+    background-color: black;
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+}
+
+h1 {
+    background-color: white;
+    font-weight: bold;
+    color: var(--teal);
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+main h2 ~ p {
+    margin-left: 10px;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav a:visited{
+    color: white;
+}
+
+[href="#top"]{
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    border-radius: 5px 0 0 0;
+    background-color: black;
+    border: 3px solid white;
+    padding: 9px;
+    cursor: pointer;
+    z-index: 5;
+
+}
+
+
+h2, label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+/* Gallery */
+
+img {
+    display: inline-flex;
+    margin-bottom: 7px;
+}
+
+.gallery {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.chile{
+    position: absolute;
+    color: white;
+    transform: translate(-50%, -50%);
+
+}
+
+.guatemala {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hawaii {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.iran {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.ireland {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.italy {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.moab {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.rocky {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.switz {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.uk {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.usa {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.wyoming {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*end*/
+
+footer p {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 20px;
+}
+
+footer h2 {
+    color: white;
+}
+
+/* Contact Form */
+
+form{
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+label, input{
+    font-size: 1em;
+    width: 100%;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+
+label {
+    color: white;
+    font-weight: normal;
+    margin-top: 9px;
+    padding-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+::placeholder{
+    color: var(--teal);
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin: 6px;
+    padding: 6px;
+}
+
+input[type="submit"] {
+    background-color: var(--teal);
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    width: 330px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: var(--teal);
+}
+
+/* Responsive media */
+
+@media screen and (min-width: 485px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav li {
+        text-align: center;
+        display: inline-flex;
+    }
+    .chile{
+        right: 150px;
+        top: 260px;
+    }
+
+    .guatemala {
+        right: 100px;
+        top: 315px;
+    }
+    
+    .hawaii {
+        right: 132px;
+        top: 850px;
+    }
+
+    .iran {
+        right: 155px;
+        top: 900px;
+    }
+
+    .ireland {
+        right: 130px;
+        top: 1550px;
+    }
+
+    .italy{
+        right: 153px;
+        top: 2785px;
+    }
+
+    .moab {
+        right: 80px;
+        top: 3070px;
+    }
+
+    .rocky {
+        right: 40px;
+        top: 3130px;
+    }
+
+    .switz {
+        right: 80px;
+        top: 3430px;
+    }
+
+    .uk {
+        right: 170px;
+        bottom: 835px;
+    }
+
+    .usa {
+        right: 160px;
+        bottom: 545px;
+    }
+
+    .wyoming {
+        right: 110px;
+        bottom: 245px;
+    }
+
+}
+
+@media screen and (min-width: 880px) {
+    h1 {
+        text-align: left;
+        right: 200px;
+    }
+
+    nav {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .chile {
+        left: 200px;
+    }
+
+    .guatemala {
+        right: 65px;
+        top: 30px;
+    }
+    
+    .hawaii {
+        left: 205px;
+        top: 550px;
+    }
+
+    .iran {
+        right: 120px;
+        top: 315px;
+    }
+
+    .ireland {
+        left: 210px;
+        top: 950px;
+    }
+
+    .italy{
+        right: 130px;
+        top: 1535px;
+    }
+
+    .moab {
+        left: 200px;
+        top: 1820px;
+    }
+
+    .rocky {
+        right: 20px;
+        top: 1580px;
+    }
+
+    .switz {
+        left: 200px;
+        top: 1870px;
+    }
+
+    .uk {
+        right: 150px;
+        bottom: 535px;
+    }
+
+    .usa {
+        left: 210px;
+        bottom: 245px;
+    }
+
+    .wyoming {
+        right: 100px;
+        bottom: 245px;
+    }
+
+    form{
+        width: 700px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        margin-left: 100px;
+        width: 500px;
+    }
+
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    nav {
+        text-align: right;
+        justify-content: end;
+    }
+
+    main h2 ~ p {
+        margin-left: 50px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .guatemala {
+        left: 650px;
+    }
+
+    .hawaii {
+        top: 260px;
+        left: 1090px;
+    }
+
+    .iran {
+        left: 200px;
+        top: 315px;
+    }
+
+    .ireland {
+        left: 650px;
+        top: 310px;
+    }
+
+    .italy{
+        right: 145px;
+        top: 900px;
+    }
+
+    .moab {
+        left: 200px;
+        top: 950px;
+    }
+
+    .rocky {
+        left: 650px;
+        top: 945px;
+    }
+
+    .switz {
+        left: 1090px;
+        top: 960px;
+    }
+
+    .uk {
+        left: 205px;
+        top: 1220px;
+    }
+
+    .usa {
+        left: 660px;
+        bottom: 245px;
+    }
+
+    .wyoming {
+        right: 100px;
+        bottom: 245px;
+    }
+
+    form {
+        width: 900px;
+    }
+
+    input[type="submit"] {
+        margin-left: 200px;
+        width: 550px;
+    }
+}
+
